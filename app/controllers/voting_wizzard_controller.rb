@@ -1,6 +1,6 @@
 class VotingWizzardController < ApplicationController
   include Wicked::Wizard
-  steps :input_information, :get_result
+  steps :savings_information, :mutual_allocation, :share_it, :get_result
 
   def show
     @user = current_user
