@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'rails_12factor'
+gem 'wicked'
 group :development, :test do
   gem 'byebug'
 end
