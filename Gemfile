@@ -9,6 +9,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'rails_12factor'
 gem 'wicked'
+gem 'simple_form'
 group :development, :test do
   gem 'byebug'
 end
