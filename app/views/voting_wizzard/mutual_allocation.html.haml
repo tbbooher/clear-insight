@@ -1,6 +1,12 @@
 - content_for :title do 'Mutual Allocation' end
 
+%p
+  %strong Step Two:
+  Enter the percentage of your retirement savings held in stocks or mutual funds , or if you don’t know that, just enter your age here: .
 
-do some allocation
+= simple_form_for(@user, html: { class: 'form-horizontal' }) do |form|
+  = form.input :stocks_or_mutual_funds_percent
 
-= link_to 'forward', next_wizard_path
+%p= link_to 'forward', next_wizard_path
+
+%p= link_to 'backward', previous_wizard_path

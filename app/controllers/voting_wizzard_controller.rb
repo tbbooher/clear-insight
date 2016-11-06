@@ -6,4 +6,11 @@ class VotingWizzardController < ApplicationController
     @user = current_user
     render_wizard
   end
+
+  def update
+    @user = current_user
+    @user.attributes = params[:user]
+    render_wizard @user
+  end
+
 end

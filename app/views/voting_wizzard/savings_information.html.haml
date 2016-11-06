@@ -1,5 +1,11 @@
 - content_for :title do 'Enter Retirement Savings' end
-Step One: Enter your estimated retirement savings,
-or just select an estimate below:
 
-= link_to 'forward', next_wizard_path
+%p
+  %strong Step One:
+  %p Enter your estimated retirement savings, or just select an estimate below:
+
+= simple_form_for(@user, html: { class: 'form-horizontal' }, url: wizard_path) do |form|
+  = form.input :estimated_retirement_savings
+
+%p
+  = link_to 'forward', next_wizard_path

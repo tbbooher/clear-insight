@@ -1,5 +1,11 @@
 - content_for :title do 'Share your stuff' end
 
-share yo stuff
+%p
+  You’re almost done! Rushmore is 100% free. All we ask is that you help us spread the word to others who would find Rushmore helpful.
+  The information you entered will NOT be shared on Facebook, and neither will your results.
 
-= link_to 'forward', next_wizard_path
+  = image_tag 'sharing.png'
+
+%p= link_to 'forward', next_wizard_path
+
+%p= link_to 'backward', previous_wizard_path
