@@ -7,6 +7,10 @@
   Regardless of political affiliation, Rushmore encourages all Americans to vote!
   Click here to locate voting booths near you.
 
+%p
+  Your savings are #{@user.estimated_retirement_savings}
+  and your stocks_or_mutual_funds_percent is #{@user.stocks_or_mutual_funds_percent}.
+
 = link_to "update your information again", previous_wizard_path
 
 = wizard_path

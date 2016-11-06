@@ -6,6 +6,4 @@
 
 = simple_form_for(@user, html: { class: 'form-horizontal' }, url: wizard_path) do |form|
   = form.input :estimated_retirement_savings
-
-%p
-  = link_to 'forward', next_wizard_path
+  = form.submit

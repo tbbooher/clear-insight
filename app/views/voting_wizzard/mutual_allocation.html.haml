@@ -4,9 +4,8 @@
   %strong Step Two:
   Enter the percentage of your retirement savings held in stocks or mutual funds , or if you don’t know that, just enter your age here: .
 
-= simple_form_for(@user, html: { class: 'form-horizontal' }) do |form|
+= simple_form_for(@user, html: { class: 'form-horizontal' }, url: wizard_path) do |form|
   = form.input :stocks_or_mutual_funds_percent
-
-%p= link_to 'forward', next_wizard_path
+  = form.submit
 
 %p= link_to 'backward', previous_wizard_path
