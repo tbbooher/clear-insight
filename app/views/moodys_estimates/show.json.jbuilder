@@ -1,0 +1,1 @@
+json.partial! "moodys_estimates/moodys_estimate", moodys_estimate: @moodys_estimate

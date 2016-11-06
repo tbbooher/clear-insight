@@ -1,0 +1,1 @@
+json.array! @moodys_estimates, partial: 'moodys_estimates/moodys_estimate', as: :moodys_estimate

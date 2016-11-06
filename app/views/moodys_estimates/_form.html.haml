@@ -1,0 +1,11 @@
+= simple_form_for(@moodys_estimate) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :year
+    = f.input :impact
+    = f.input :sp_index
+    = f.input :category
+
+  .form-actions
+    = f.button :submit

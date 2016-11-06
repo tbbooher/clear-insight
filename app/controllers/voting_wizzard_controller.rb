@@ -4,6 +4,9 @@ class VotingWizzardController < ApplicationController
 
   def show
     @user = current_user
+    if step == :get_result
+        @stock_value = @user.stock_value
+    end
     render_wizard
   end
 

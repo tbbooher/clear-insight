@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Year:
+  = @moodys_estimate.year
+%p
+  %b Impact:
+  = @moodys_estimate.impact
+%p
+  %b Sp index:
+  = @moodys_estimate.sp_index
+
+= link_to 'Edit', edit_moodys_estimate_path(@moodys_estimate)
+\|
+= link_to 'Back', moodys_estimates_path

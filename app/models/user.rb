@@ -10,4 +10,16 @@ class User < ActiveRecord::Base
     end
   end
 
+  def stock_value_current_law
+    self.estimated_retirement_savings + self.stocks_or_mutual_funds_percent
+  end
+
+  def stock_value_trump_policies
+    self.estimated_retirement_savings + self.stocks_or_mutual_funds_percent
+  end
+
+  def stock_value_trump_policies_resisted
+    self.estimated_retirement_savings + self.stocks_or_mutual_funds_percent
+  end
+
 end

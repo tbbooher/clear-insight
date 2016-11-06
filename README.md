@@ -33,6 +33,7 @@ Getting Started
 
 Documentation and Support
 -------------------------
+Site [useful for wicked](http://manoylo.co/ruby-on-rails/gem-wicked-cool/)
 
 Issues
 -------------

@@ -1,0 +1,25 @@
+%h1 Listing moodys_estimates
+
+%table
+  %thead
+    %tr
+      %th Year
+      %th Impact
+      %th Sp index
+      %th
+      %th
+      %th
+
+  %tbody
+    - @moodys_estimates.each do |moodys_estimate|
+      %tr
+        %td= moodys_estimate.year
+        %td= moodys_estimate.impact
+        %td= moodys_estimate.sp_index
+        %td= link_to 'Show', moodys_estimate
+        %td= link_to 'Edit', edit_moodys_estimate_path(moodys_estimate)
+        %td= link_to 'Destroy', moodys_estimate, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Moodys estimate', new_moodys_estimate_path

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :moodys_estimates
   get '/about' => 'pages#about'
 
   resources :users
