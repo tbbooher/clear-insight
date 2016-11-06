@@ -1,5 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe MoodysEstimate, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+  it 'should be able to load data' do
+    MoodysEstimate.load_data
+    expect(MoodysEstimate.all.size).to be > 0
+  end
 end
