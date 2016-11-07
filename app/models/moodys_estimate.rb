@@ -14,6 +14,7 @@ class MoodysEstimate < ActiveRecord::Base
 
     [2016, 2017, 2018].each do |y|
       1.upto(3).each do |i|
+        puts "now adding year #{y} and category #{CATEGORY[i]}"
         # puts index_data[i].split(' ').map(&:to_f)
         m = MoodysEstimate.new
         m.category = i
