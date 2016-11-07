@@ -72,6 +72,9 @@ GEM
     concurrent-ruby (1.0.2)
     daemons (1.2.4)
     database_cleaner (1.5.3)
+    debase (0.2.1)
+      debase-ruby_core_source
+    debase-ruby_core_source (0.9.2)
     debug_inspector (0.0.2)
     diff-lcs (1.2.5)
     dotenv (2.1.1)
@@ -316,6 +319,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.1.0)
   database_cleaner
+  debase
   dotenv-rails
   factory_girl_rails
   faker

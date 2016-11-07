@@ -37,7 +37,7 @@ group :development do
   gem 'spring-commands-rspec'
 end
 group :development, :test do
-  gem 'debugger'
+  gem 'debase'
   gem 'ruby-debug-ide'
   #gem 'ruby-debug-base19'
   gem 'factory_girl_rails'
