@@ -1,11 +1,12 @@
-%h1 Listing moodys_estimates
+%h1 Listing moodys estimate data
 
-%table
+%table{style: 'width: 100%'}
   %thead
     %tr
       %th Year
       %th Impact
       %th Sp index
+      %th Category
       %th
       %th
       %th
@@ -16,6 +17,7 @@
         %td= moodys_estimate.year
         %td= moodys_estimate.impact
         %td= moodys_estimate.sp_index
+        %td= moodys_estimate.category_name
         %td= link_to 'Show', moodys_estimate
         %td= link_to 'Edit', edit_moodys_estimate_path(moodys_estimate)
         %td= link_to 'Destroy', moodys_estimate, :method => :delete, :data => { :confirm => 'Are you sure?' }

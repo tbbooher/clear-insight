@@ -9,8 +9,8 @@ class MoodysEstimate < ActiveRecord::Base
     index_data = {1 => '1966.5 1992.5 2000.2', 2 => '1966.5	1695.1 1472.4', 3 => '1966.5 1824.3 1784.2'}
     per_data = {1 => '-4.60	1.30	4.00', 2 => '-4.60	-13.80	-13.10', 3 => '-4.60	-7.20	-2.20'}
 
-    index_data = index_data.keys.map {|k| index_data[k].split(' ').map{|k| (k.to_f*100).round} }
-    per_data = per_data.keys.map {|k|  per_data[k].split(' ').map{|a| a.to_f}}
+    index_data = index_data.keys.map {|k| index_data[k].split(' ').map{|a| a.to_f} }
+    per_data = per_data.keys.map {|k|  per_data[k].split(' ').map{|k| (k.to_f*100).round}}
 
     [2016, 2017, 2018].each do |y|
       1.upto(3).each do |i|
